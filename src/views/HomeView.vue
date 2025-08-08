@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import axios from "axios";
+import router from "../router";
 
 const searchQuery = ref(""); // input -> v-model
 const results = ref([]);    // result from api
@@ -38,6 +39,18 @@ const getSearchResults = async () => {
 
 };
 
+const previewDetails = (city) => {
+
+  router.push({
+    name: "WeatherDetails",
+    query : {
+      cityName: city.name,
+      lat: city.lat,
+      lng: city.lng,
+    },
+  });
+};
+
 </script>
 
 
@@ -48,7 +61,7 @@ const getSearchResults = async () => {
         class="px-1 py-2 w-full border-b focus:outline-0 bg-transparent" />
 
       <ul v-if="results.length" class="absolute bg-gray-800 text-white w-full shadow-md py-2 px-1 z-50">
-        <li v-for="city in results" class="cursor-pointer py-1 hover:bg-gray-700 px-2">
+        <li v-for="city in results" @click="previewDetails(city)" class="cursor-pointer py-1 hover:bg-gray-700 px-2">
           {{ city.name }}
         </li>
       </ul>
