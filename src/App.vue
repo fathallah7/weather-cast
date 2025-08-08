@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import SiteNav from './components/SiteNav.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 </script>
 

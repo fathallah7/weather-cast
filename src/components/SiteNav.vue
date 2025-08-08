@@ -13,12 +13,12 @@ const toggleModal = () => {
 </script>
 
 <template>
-    <header class="sticky top-0 shadow-xl">
+    <header class="sticky top-0 shadow-xl bg-cyan-800 z-50">
         <nav class="flex items-center justify-between gap-4 py-5  px-16 md:px-44 lg:px-72  text-white">
             <RouterLink :to="{ name: 'home' }">
                 <div class="flex items-center gap-3">
                     <i class="fa-solid fa-sun"></i>
-                    <p class="text-xl font-semibold">Weather App</p>
+                    <p class="text-xl font-semibold">Weather Cast</p>
                 </div>
             </RouterLink>
 
