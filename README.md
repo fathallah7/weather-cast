@@ -34,7 +34,9 @@ This app allows users to search for any location and retrieve accurate real-time
 ```bash
 git clone https://github.com/fathallah/weather-cast.git
 cd weather-cast
+```
 
 ```bash
 npm install
 npm run dev
+```
