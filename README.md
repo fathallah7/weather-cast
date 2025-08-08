@@ -32,7 +32,7 @@ This app allows users to search for any location and retrieve accurate real-time
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/fathallah/weather-cast.git
+git clone https://github.com/fathallah7/weather-cast.git
 cd weather-cast
 ```
 
