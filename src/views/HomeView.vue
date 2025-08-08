@@ -12,6 +12,7 @@ const apiKey = "0da1f1b489cd4ffdbe4d8458d7660c09";  // Api key from opencagedata
 const getSearchResults = async () => {
 
   serverError.value = (null);
+  results.value = []; // reset results
 
   if (searchQuery.value.trim() === "") {   // if empty search then the result is empty and no error
     results.value = [];
